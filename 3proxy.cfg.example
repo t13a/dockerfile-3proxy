@@ -1,0 +1,7 @@
+log
+nserver 1.1.1.1
+nserver 1.0.0.1
+nscache 65536
+nscache6 65536
+auth none
+socks
