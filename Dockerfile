@@ -10,6 +10,4 @@ RUN echo "@testing ${APK_REPOSITORY}/${APK_BRANCH}/testing" >> /etc/apk/reposito
     3proxy@testing \
     su-exec
 
-COPY /rootfs /
-
-CMD [ "3proxy", "/3proxy.cfg" ]
+CMD [ "su-exec", "3proxy", "3proxy", "/3proxy.cfg" ]
